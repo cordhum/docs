@@ -1,22 +1,51 @@
 site_name: CORDH Data Harmonisation
 repo_url: https://github.com/cordhum/docs
 site_description: CORDH Data Harmonisation Working Group
+
+# Customization
+extra:
+  social:
+    - type: globe
+      link: https://cordh.net
+    - type: github-alt
+      link: https://github.com/cordhum
+    - type: wikipedia-w
+      link: https://wiki.cordh.net
+    - type: twitter
+      link: https://twitter.com/
+  
+
+# pagination  
 pages:
     - Home: index.md
     - Entities: modelling.md
     - Time: time.md
     - Images: Images.md
     - Bibliographic Data: bibliographic_data.md
+    - Tool: 
+        - Home: tool/index.md
+        - X3ML: tool/mapping.md
+
 theme: 
   name: material
-  icon: 'description'
+  logo:
+    icon: description
   palette:
-    primary: 'red'
+    primary: red
+  feature:
+    tabs: true
+
 markdown_extensions:
   - pymdownx.smartsymbols
   - pymdownx.mark
+  - pymdownx.details
+  - pymdownx.superfences
   - meta
   - footnotes
-markdown_extensions:
+  - admonition
+  - toc:
+      permalink: true
   - codehilite:
       linenums: true
+
+
