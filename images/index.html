@@ -111,7 +111,7 @@
       <div class="md-flex__cell md-flex__cell--shrink">
         <a href=".." title="CORDH Data Harmonisation" class="md-header-nav__button md-logo">
           
-            <i class="md-icon"></i>
+            <i class="md-icon">description</i>
           
         </a>
       </div>
@@ -196,6 +196,47 @@
         
       
       
+        
+
+<nav class="md-tabs" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  <li class="md-tabs__item">
+    
+      <a href=".." title="Home" class="md-tabs__link md-tabs__link--active">
+        Home
+      </a>
+    
+  </li>
+
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../tool/" title="Tool" class="md-tabs__link">
+          Tool
+        </a>
+      
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+      
       <main class="md-main">
         <div class="md-main__inner md-grid" data-md-component="container">
           
@@ -207,7 +248,7 @@
   <label class="md-nav__title md-nav__title--site" for="__drawer">
     <a href=".." title="CORDH Data Harmonisation" class="md-nav__button md-logo">
       
-        <i class="md-icon"></i>
+        <i class="md-icon">description</i>
       
     </a>
     CORDH Data Harmonisation
@@ -342,6 +383,54 @@
   </li>
 
     
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6">
+    
+    <label class="md-nav__link" for="nav-6">
+      Tool
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-6">
+        Tool
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../tool/" title="Home" class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../tool/mapping/" title="X3ML" class="md-nav__link">
+      X3ML
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
   </ul>
 </nav>
                   </div>
@@ -395,29 +484,27 @@
                   <a href="https://github.com/cordhum/docs/edit/master/docs/Images.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                <h1 id="images">Images</h1>
+                <h1 id="images">Images<a class="headerlink" href="#images" title="Permanent link">&para;</a></h1>
 <p><strong>This is a draft for the modelling of image data in CIDOC-CRM with reference to IIIF</strong></p>
-<h2 id="images-and-iiif">Images and IIIF</h2>
+<h2 id="images-and-iiif">Images and IIIF<a class="headerlink" href="#images-and-iiif" title="Permanent link">&para;</a></h2>
 <p>The <a href="http://iiif.io/">IIIF</a> <a href="http://iiif.io/api/image/2.1/">Image API</a> defines a standard URI format for accessing images on the web. The format is:</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="p">{</span>scheme<span class="p">}:</span><span class="o">//</span><span class="p">{</span>server<span class="p">}{</span><span class="l">/prefix</span><span class="p">}</span><span class="err">/</span><span class="p">{</span>identifier<span class="p">}</span><span class="err">/</span><span class="p">{</span>region<span class="p">}</span><span class="err">/</span><span class="p">{</span>size<span class="p">}</span><span class="err">/</span><span class="p">{</span>rotation<span class="p">}</span><span class="err">/</span><span class="p">{</span>quality<span class="p">}</span><span class="o">.</span><span class="p">{</span>format<span class="p">}</span>
 </pre></div>
 </td></tr></table>
 
-<p>For example:</p>
+<p>For example:
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>http://www.example.org/image-service/abcd1234/full/full/0/default.jpg
 </pre></div>
-</td></tr></table>
-
+</td></tr></table></p>
 <p>In addition, it defines a standard format for information about an image as follows:</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="p">{</span>scheme<span class="p">}:</span><span class="o">//</span><span class="p">{</span>server<span class="p">}{</span><span class="l">/prefix</span><span class="p">}</span><span class="err">/</span><span class="p">{</span>identifier<span class="p">}</span><span class="l">/info.json</span>
 </pre></div>
 </td></tr></table>
 
-<p>For example:</p>
+<p>For example:
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>http://www.example.org/image-service/abcd1234/info.json
 </pre></div>
-</td></tr></table>
-
+</td></tr></table></p>
 <p>The information is returned in <a href="https://www.w3.org/TR/json-ld/">JSON-LD</a> format.</p>
 <p>The JSON-LD contains an @id which specifies the URI of the profile. This can (but does not need to?) follow the same schema:</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="p">{</span>scheme<span class="p">}:</span><span class="o">//</span><span class="p">{</span>server<span class="p">}{</span><span class="l">/prefix</span><span class="p">}</span><span class="err">/</span><span class="p">{</span>identifier<span class="p">}</span>
@@ -425,7 +512,7 @@
 </td></tr></table>
 
 <p>Hence the URI resolves to the information about the image, not the image itself.</p>
-<h2 id="iiif-and-cidoc-crm">IIIF and CIDOC-CRM</h2>
+<h2 id="iiif-and-cidoc-crm">IIIF and CIDOC-CRM<a class="headerlink" href="#iiif-and-cidoc-crm" title="Permanent link">&para;</a></h2>
 <p>The IIIF URI resolves to a JSON-LD document which contains information about the image, not the image itself. It may nevertheless, for practical purposes, be treated as an image – this is the route chosen by the <a href="http://linked.art/model/object/digital/">linked.art</a> model, which types it as a E36 Visual Item.</p>
 <p>There can be reasons why one wants to use a different URI for the image. For example, if the IIIF endpoint might change in the future, but the URI should remain the same. Or, if the image URI serves as the basis for other URIs (e.g. http://www.example.org/image/abcd1234/manifest) and one wants to avoid potential collision with the IIIF namespace.</p>
 <p>The proposal here is to use a different URI for the image (for the above reasons), but to construct it so that the identifier matches the IIIF schema. The Image is the subject of the IIIF information.</p>
@@ -511,6 +598,19 @@
       </div>
       
         
+  <div class="md-footer-social">
+    <link rel="stylesheet" href="../assets/fonts/font-awesome.css">
+    
+      <a href="https://cordh.net" class="md-footer-social__link fa fa-globe"></a>
+    
+      <a href="https://github.com/cordhum" class="md-footer-social__link fa fa-github-alt"></a>
+    
+      <a href="https://wiki.cordh.net" class="md-footer-social__link fa fa-wikipedia-w"></a>
+    
+      <a href="https://twitter.com/" class="md-footer-social__link fa fa-twitter"></a>
+    
+  </div>
+
       
     </div>
   </div>

@@ -111,7 +111,7 @@
       <div class="md-flex__cell md-flex__cell--shrink">
         <a href=".." title="CORDH Data Harmonisation" class="md-header-nav__button md-logo">
           
-            <i class="md-icon"></i>
+            <i class="md-icon">description</i>
           
         </a>
       </div>
@@ -196,6 +196,47 @@
         
       
       
+        
+
+<nav class="md-tabs" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  <li class="md-tabs__item">
+    
+      <a href=".." title="Home" class="md-tabs__link md-tabs__link--active">
+        Home
+      </a>
+    
+  </li>
+
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../tool/" title="Tool" class="md-tabs__link">
+          Tool
+        </a>
+      
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+      
       <main class="md-main">
         <div class="md-main__inner md-grid" data-md-component="container">
           
@@ -207,7 +248,7 @@
   <label class="md-nav__title md-nav__title--site" for="__drawer">
     <a href=".." title="CORDH Data Harmonisation" class="md-nav__button md-logo">
       
-        <i class="md-icon"></i>
+        <i class="md-icon">description</i>
       
     </a>
     CORDH Data Harmonisation
@@ -484,6 +525,54 @@
   </li>
 
     
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6">
+    
+    <label class="md-nav__link" for="nav-6">
+      Tool
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-6">
+        Tool
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../tool/" title="Home" class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../tool/mapping/" title="X3ML" class="md-nav__link">
+      X3ML
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
   </ul>
 </nav>
                   </div>
@@ -679,14 +768,14 @@
                   <a href="https://github.com/cordhum/docs/edit/master/docs/modelling.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                <h1 id="cordh-data-harmonisation-group">CORDH Data Harmonisation Group</h1>
+                <h1 id="cordh-data-harmonisation-group">CORDH Data Harmonisation Group<a class="headerlink" href="#cordh-data-harmonisation-group" title="Permanent link">&para;</a></h1>
 <hr />
 <p><em>CRM modelling &amp; examples</em></p>
 <p>The document outlines modelling choices in relation to diverse entities described in the Consortium's data. The modelling is provided, whenever possible, using CIDOC-CRM. However, in certain cases, other ontologies are used. 
 For each of the described entities diverse encoding choices were outlined, and a decision about each of them was made. The scope of this document is not to provide a track of this process, but just to present its results. The documentation of the possible modelling and encoding of an entity in RDF can be found in the <a href="#">Annex A</a>.</p>
 <p>For each entity, as an example of its use, an RDF encoding of a real-world statement is provided. The syntax of the encoding is Turtle, and all the prefix used can be found on <a href="http://prefix.cc/">http://prefix.cc/</a>.</p>
-<h2 id="appellation">Appellation</h2>
-<h4 id="note">Note</h4>
+<h2 id="appellation">Appellation<a class="headerlink" href="#appellation" title="Permanent link">&para;</a></h2>
+<h4 id="note">Note<a class="headerlink" href="#note" title="Permanent link">&para;</a></h4>
 <p>An appellation is a sign, usually in the form of a string of characters, used for referencing an entity (person object, place, an event etc.). More appellations can refer, in the same language, to the same entity, as in the case of:</p>
 <blockquote>
 <p>Monna Lisa or La Gioconda. which both refers to the same painting</p>
@@ -696,7 +785,7 @@ For each of the described entities diverse encoding choices were outlined, and a
 <p>Prince, Alexander Nevermind, The Artist, The Artist Formerly Known as Prince (TAFKAP), Camille, Christopher, Tracy Jamie Starr, Joey Coco, Tora Tora, The Kid — which refers to Prince Rogers Nelson in diverse moments of his career</p>
 </blockquote>
 <p>However, If more appellations can coexist, a chosen one should be defined using a different property which identifies it with our <u>preferred</u> appellation.</p>
-<h3 id="modelling-the-appellation">Modelling the Appellation</h3>
+<h3 id="modelling-the-appellation">Modelling the Appellation<a class="headerlink" href="#modelling-the-appellation" title="Permanent link">&para;</a></h3>
 <p>A simple appellation can be modelled in CRM as</p>
 <p><strong>E21 Person → P1 is identified by → E41 Appellation</strong></p>
 <p>The encoding of the string of characters of the appellation can be done in multiple ways. The form chosen by the consortium is:</p>
@@ -720,10 +809,10 @@ For each of the described entities diverse encoding choices were outlined, and a
 <blockquote>
 <p><em>The use of crm:P3_has_note for encoding the value of the appellation is discouraged because of its confusing nature. Appellations can have both notes and values, which are part of two different information domains, and should not overlap. Additionally, the property rdf:value, which can be also be used to encode the appellation, is to be set aside because of its lack of explicit semantics.</em></p>
 </blockquote>
-<h2 id="identifier">Identifier</h2>
-<h4 id="note_1">Note</h4>
+<h2 id="identifier">Identifier<a class="headerlink" href="#identifier" title="Permanent link">&para;</a></h2>
+<h4 id="note_1">Note<a class="headerlink" href="#note_1" title="Permanent link">&para;</a></h4>
 <p>An identifier is a string assigned to an entity that uniquely identifies it in a system (usually, a digital system). Examples of identifiers comprise inventory numbers, databases keys or other strings used for retrieval and identification purpose. As for the appellation, an entity can have multiple identifiers from the same or different system, and a preferred one can be chosen.</p>
-<h3 id="modelling-the-identifier">Modelling the Identifier</h3>
+<h3 id="modelling-the-identifier">Modelling the Identifier<a class="headerlink" href="#modelling-the-identifier" title="Permanent link">&para;</a></h3>
 <p>A simple identifier can be modelled in CRM as</p>
 <p><strong>E21 Person → P1 is identified by → E42 Identifier</strong></p>
 <p>The encoding of the string of characters of the identifier can be done in multiple ways. The form chosen by the consortium is:</p>
@@ -743,7 +832,7 @@ For each of the described entities diverse encoding choices were outlined, and a
 </td></tr></table>
 
 <p><em><small>Codebox 2  - Identifier</small></em></p>
-<h2 id="preferred-appellations-identifiers">Preferred Appellations &amp; Identifiers</h2>
+<h2 id="preferred-appellations-identifiers">Preferred Appellations &amp; Identifiers<a class="headerlink" href="#preferred-appellations-identifiers" title="Permanent link">&para;</a></h2>
 <p>The preference for a specific sign or string for identifying an entity will be modelled using type. 
 In respect to the encoding of the <a href="#appellation">appellation</a> or the <a href="#identifier">identifier</a>, the initial part of the modelling remain the same:</p>
 <p><strong>E21 Person → P1 is identified by → E41 Appellation</strong>
@@ -751,7 +840,7 @@ In respect to the encoding of the <a href="#appellation">appellation</a> or the 
 <p>The preference towards a specific appellation or identifier has to be defined using a E55 Type:</p>
 <p><strong>E21 Person → P1 is identified by → E41 Appellation → P2 has type → E55 Type</strong></p>
 <p>It is advisable to use a standard vocabulary to express the preferred type, such as the one from the Art and Architecture Thesaurus: http://vocab.getty.edu/page/aat/300404670.</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+<p><table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2
 3
 4
@@ -764,8 +853,7 @@ In respect to the encoding of the <a href="#appellation">appellation</a> or the 
 <span class="nn">crm:</span><span class="nt">P2_has_type</span><span class="w"> </span><span class="s">&quot;http://vocab.getty.edu/page/aat/300404670&quot;</span><span class="o">^^</span><span class="ge">xsd:anyURI</span><span class="w"> </span><span class="p">.</span><span class="w"></span>
 </pre></div>
 </td></tr></table>
-
-<p><em><small>Codebox 3  - Preferred Appellation</small></em></p>
+<em><small>Codebox 3  - Preferred Appellation</small></em></p>
 <p>If one appellation is represented using diverse alphabets (Latin, Chinese, Greek, Russian..), it would be treated as the same E41 Appellation, and the different strings encoded with rdfs:label. In this case only,skos:prefLabel can be used to define the preferred textual version of the same appellation.</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2
@@ -789,16 +877,16 @@ In respect to the encoding of the <a href="#appellation">appellation</a> or the 
 <p><em>CRM does provide a property for encoding a preferred identifier, P48 has preferred identifier, but the range is E42 Identifier, a subclass of E41 Appellation, therefore it cannot be used for encoding the preferred appellation. While it can be used at least for the preferred we opted for a standard solution for both classes</em>
 While the use of skos:prefLabel was considered, it was easily rejected because if a person has multiple appellations, skos:prefLabel would not identify the preferred one, but only the preferred string of text of that specific appellation.</p>
 </blockquote>
-<h2 id="language-for-literals">Language for Literals</h2>
+<h2 id="language-for-literals">Language for Literals<a class="headerlink" href="#language-for-literals" title="Permanent link">&para;</a></h2>
 <p><em>To be completed</em></p>
-<h2 id="dimensionquantity">Dimension/Quantity</h2>
-<h4 id="note_2">Note</h4>
+<h2 id="dimensionquantity">Dimension/Quantity<a class="headerlink" href="#dimensionquantity" title="Permanent link">&para;</a></h2>
+<h4 id="note_2">Note<a class="headerlink" href="#note_2" title="Permanent link">&para;</a></h4>
 <p>Dimension are measurable data which results from an observation. The outcome of an observation is always to be seen as a couple value/system where the meaning of the value is dependant on the system used.</p>
 <p>Dimensions can be modelled in CRM as:
 <strong>E54 Dimension → P91 has unit →  E58 Measurement Unit</strong>
 <strong>E54 Dimension → P90 has value →  E60 Number</strong></p>
 <p>The modelling above is based on the differentiation between the value and the system which provide meaning to the value. </p>
-<h3 id="modelling-dimension">Modelling Dimension</h3>
+<h3 id="modelling-dimension">Modelling Dimension<a class="headerlink" href="#modelling-dimension" title="Permanent link">&para;</a></h3>
 <p>When talking about Dimension it is paramount to use an external recognisable authority to define the system which provides meaning to the value.
 In order to define the measurement units and the quantity kind (length, weight) we rely on E55 Type and the vocabulary provided with the Ontology of units of measure (OM). </p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
@@ -825,8 +913,8 @@ In order to define the measurement units and the quantity kind (length, weight) 
 <p>Other ontologies were considered, specifically QUDT, which is "Quantity, Unit, Dimension and Type" schema used for modelling physical measurable properties in a machine processable form. While QUDT was the initial candidate, it was not chosen because the browsing of the units was quite difficult and, moreover, it is still under development and not yet complete or stable.   </p>
 <p>OM can be easily browsed here:
 <a href="../[http://www.ontology-of-units-of-measure.org">http://www.ontology-of-units-of-measure.org/</a></p>
-<h2 id="time-span">Time-span</h2>
-<h4 id="note_3">Note</h4>
+<h2 id="time-span">Time-span<a class="headerlink" href="#time-span" title="Permanent link">&para;</a></h2>
+<h4 id="note_3">Note<a class="headerlink" href="#note_3" title="Permanent link">&para;</a></h4>
 <p>CIDOC-CRM assume the existence of a SpaceTime dimension, where each temporal entity can be mapped to. This system allows the computing of diversity, closeness or equality in time between events. In doing so, it treats temporal extents in their physical sense, characterising each time interval with a beginning, an end and a duration. Additionally, CIDOC-CRM assumes that our knowledge of the time intervals of a historical event has a diverse degree of certainty, and it allows us to record such certainty/uncertainty with specific properties. A useful summarization of the treatment of time in CIDOC-CRM is available in the document <a href="../time.html">Time</a>.  </p>
 <p>Following CIDOC-CRM we will model time-related assertions as certain or uncertain, where the certain statements are going to be model using the property P81, while the uncertain statements using the property P82. The level of certainty has to be determined by the researcher carrying out the work. </p>
 <p>We can have two diverse modelling scenario:</p>
@@ -838,7 +926,7 @@ In order to define the measurement units and the quantity kind (length, weight) 
 <blockquote>
 <p>YYYY-MM-DD</p>
 </blockquote>
-<h3 id="fuzzy-time-statements">Fuzzy Time Statements</h3>
+<h3 id="fuzzy-time-statements">Fuzzy Time Statements<a class="headerlink" href="#fuzzy-time-statements" title="Permanent link">&para;</a></h3>
 <p>Fuzzy time statements are modelled using CIDOC-CRM as:</p>
 <ul>
 <li><strong>E52 Time-Span → P82a begin of the begin → xsd:dateTime</strong></li>
@@ -864,7 +952,7 @@ Change to dateTime
 <blockquote>
 <p>*The production event recorded here has a time interval of almost 3 centuries. The choice of using a fuzzy time statement is, in this case, quite clear. *</p>
 </blockquote>
-<h3 id="precise-time-statements">Precise time statements</h3>
+<h3 id="precise-time-statements">Precise time statements<a class="headerlink" href="#precise-time-statements" title="Permanent link">&para;</a></h3>
 <p>Precise time statements are modelled using CIDOC-CRM as:</p>
 <ul>
 <li><strong>E52 Time-Span → P81a end of the begin → xsd:dateTime</strong></li>
@@ -885,23 +973,22 @@ Change to dateTime
 <blockquote>
 <p><em>The precision of the date is a clear sign we are dealing with a more precise time statement.</em></p>
 </blockquote>
-<h2 id="spatial-coordinate">Spatial Coordinate</h2>
-<h4 id="note_4">Note</h4>
+<h2 id="spatial-coordinate">Spatial Coordinate<a class="headerlink" href="#spatial-coordinate" title="Permanent link">&para;</a></h2>
+<h4 id="note_4">Note<a class="headerlink" href="#note_4" title="Permanent link">&para;</a></h4>
 <p>A place is a section of space identified independently from its temporal status. They are usually referenced using absolute (WGS, EPSG) or relative reference systems. Absolute reference system uses point-based coordinates to identify the representation of a space.</p>
-<h3 id="longitude-latitude">Longitude &amp; Latitude</h3>
+<h3 id="longitude-latitude">Longitude &amp; Latitude<a class="headerlink" href="#longitude-latitude" title="Permanent link">&para;</a></h3>
 <p>The spatial coordinates of a place can be modelled in CIDOC-CRM as </p>
 <p><strong>E53 Place → P87 is identified by →  E47 Spatial Coordinates</strong></p>
 <p>The encoding of the latitude and longitude can be done in multiple ways. The form chosen by the consortium is to rely on a basic RDF vocabulary for representing latitude and longitude using WGS84 as a reference system. In order to do so, we will have to map the class crm:E47_Spatial_Coordinates with the corresponding class in <a href="https://www.w3.org/2003/01/geo/">W3C-Basic-Geo</a>.</p>
 <p>We can declare geo:Point as a subclass of crm:E47_Spatial_Coordinates with the following</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+<p><table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2
 3</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="err">&lt;</span><span class="nn">rdfs:</span><span class="nt">Class</span><span class="w"> </span><span class="nn">rdf:</span><span class="nt">about</span><span class="err">=</span><span class="s">&quot;http://www.w3.org/2003/01/geo/wgs84_pos#Point&quot;</span><span class="err">&gt;</span><span class="w"></span>
 <span class="w">    </span><span class="err">&lt;</span><span class="nn">rdfs:</span><span class="nt">subClassOf</span><span class="w"> </span><span class="nn">rdf:</span><span class="nt">resource</span><span class="err">=</span><span class="s">&quot;E47_Spatial_Coordinates&quot;</span><span class="err">/&gt;</span><span class="w"></span>
 <span class="nv">&lt;/rdfs:Class&gt;</span><span class="w"></span>
 </pre></div>
 </td></tr></table>
-
-<p><em><small>Codebox 7</small></em></p>
+<em><small>Codebox 7</small></em></p>
 <p>Having mapped crm:E47_Spatial_Coordinates to geo:Point we can use two new properties</p>
 <ul>
 <li>geo:lat</li>
@@ -985,6 +1072,19 @@ Change to dateTime
       </div>
       
         
+  <div class="md-footer-social">
+    <link rel="stylesheet" href="../assets/fonts/font-awesome.css">
+    
+      <a href="https://cordh.net" class="md-footer-social__link fa fa-globe"></a>
+    
+      <a href="https://github.com/cordhum" class="md-footer-social__link fa fa-github-alt"></a>
+    
+      <a href="https://wiki.cordh.net" class="md-footer-social__link fa fa-wikipedia-w"></a>
+    
+      <a href="https://twitter.com/" class="md-footer-social__link fa fa-twitter"></a>
+    
+  </div>
+
       
     </div>
   </div>

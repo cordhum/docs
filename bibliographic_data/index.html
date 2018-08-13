@@ -111,7 +111,7 @@
       <div class="md-flex__cell md-flex__cell--shrink">
         <a href=".." title="CORDH Data Harmonisation" class="md-header-nav__button md-logo">
           
-            <i class="md-icon"></i>
+            <i class="md-icon">description</i>
           
         </a>
       </div>
@@ -196,6 +196,47 @@
         
       
       
+        
+
+<nav class="md-tabs" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  <li class="md-tabs__item">
+    
+      <a href=".." title="Home" class="md-tabs__link md-tabs__link--active">
+        Home
+      </a>
+    
+  </li>
+
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../tool/" title="Tool" class="md-tabs__link">
+          Tool
+        </a>
+      
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+      
       <main class="md-main">
         <div class="md-main__inner md-grid" data-md-component="container">
           
@@ -207,7 +248,7 @@
   <label class="md-nav__title md-nav__title--site" for="__drawer">
     <a href=".." title="CORDH Data Harmonisation" class="md-nav__button md-logo">
       
-        <i class="md-icon"></i>
+        <i class="md-icon">description</i>
       
     </a>
     CORDH Data Harmonisation
@@ -382,6 +423,54 @@
   </li>
 
     
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6">
+    
+    <label class="md-nav__link" for="nav-6">
+      Tool
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-6">
+        Tool
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../tool/" title="Home" class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../tool/mapping/" title="X3ML" class="md-nav__link">
+      X3ML
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
   </ul>
 </nav>
                   </div>
@@ -475,14 +564,14 @@
                   <a href="https://github.com/cordhum/docs/edit/master/docs/bibliographic_data.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                <h1 id="bibliographic-data">Bibliographic Data</h1>
+                <h1 id="bibliographic-data">Bibliographic Data<a class="headerlink" href="#bibliographic-data" title="Permanent link">&para;</a></h1>
 <p>We model bibliographic data using <a href="http://www.cidoc-crm.org/frbroo/">FRBRoo</a>, the CIDOC-CRM extension for bibliographic data. We demonstrate the modelling of a printed book, but the approach can be adapted to similar items of expressive matters, such as letters, manuscripts, recordings, etc.</p>
 <p>Note: the information here is based on FRBRoo 2.4, which is the latest release at the time of writing. FRBRoo 3.0 is currently under development.</p>
-<h2 id="references">References</h2>
+<h2 id="references">References<a class="headerlink" href="#references" title="Permanent link">&para;</a></h2>
 <p>The examples are based on the data of the <a href="http://sphaera.mpiwg-berlin.mpg.de">Sphaera</a> project. The data model for this was developed following the guidelines in:</p>
 <p>Doerr, M., Gradmann, S., LeBoeuf, P., Aalberg, T., Bailly, R., &amp; Olensky, M. (2013). <em>Final Report on EDM - FRBRoo Application Profile Task Force</em>. Europeana. Retrieved from <a href="http://pro.europeana.eu/taskforce/edm-frbroo-application-profile">http://pro.europeana.eu/taskforce/edm-frbroo-application-profile</a></p>
 <p>A tutorial on FRBRoo is available <a href="http://83.212.168.219/FRBR_Tutorial/">here</a></p>
-<h2 id="book">Book</h2>
+<h2 id="book">Book<a class="headerlink" href="#book" title="Permanent link">&para;</a></h2>
 <p>In FRBRoo, a book is understood as consisting of several (CRM) entities:</p>
 <ul>
 <li>the physical book (F5 Item): an individual material copy of a book</li>
@@ -529,7 +618,7 @@
 </pre></div>
 </td></tr></table>
 
-<h3 id="author">Author</h3>
+<h3 id="author">Author<a class="headerlink" href="#author" title="Permanent link">&para;</a></h3>
 <p>As author we understand the actor(s) responsible for the creation of a F22 Self-Contained Expression. Therefore, the term does not convey a particular idea of authorship and can include different roles, such as translators, copyists, etc.</p>
 <p>We model the creation of the Expression as follows:</p>
 <ol>
@@ -600,7 +689,7 @@
 </pre></div>
 </td></tr></table>
 
-<h3 id="publisher">Publisher</h3>
+<h3 id="publisher">Publisher<a class="headerlink" href="#publisher" title="Permanent link">&para;</a></h3>
 <p>As publisher we understand the actor(s) responsible for the creation of a F24 Publication Expression. A publisher may be the same as the printer, in which case they are also the actor responsible for the F32 Carrier Production Event.</p>
 <p>We model the creation of the F24 Publication Expression as follows:</p>
 <ol>
@@ -632,7 +721,7 @@
 </pre></div>
 </td></tr></table>
 
-<h3 id="date-published">Date published</h3>
+<h3 id="date-published">Date published<a class="headerlink" href="#date-published" title="Permanent link">&para;</a></h3>
 <p>The publishing date is the date the F30 Publication has been carried out.</p>
 <p>It is modelled as follows:</p>
 <ol>
@@ -662,7 +751,7 @@
 </pre></div>
 </td></tr></table>
 
-<h4 id="implementation-in-researchspace">Implementation in ResearchSpace</h4>
+<h4 id="implementation-in-researchspace">Implementation in ResearchSpace<a class="headerlink" href="#implementation-in-researchspace" title="Permanent link">&para;</a></h4>
 <p>We require users to specify three dates: the earliest year, the latest year and a textual date. If the exact year is known, users enter the same year in all three fields. If the exact year is not known, users can enter boundaries in the earliest and latest field and specify a verbal description in the textfield (e.g. "ca. 1950"). This setup works in our case, where most years are specified, but might not be the best solution when dates are uncertain (see Time section for further discussion on this).</p>
 <p>ResearchSpace offers a Date Input field. However, it requires a complete date whereas we want to allow users to just enter a year. This year then gets translated to 1 January for the earliest year and 31 December for the latest year. This step is necessary to enable searching and for the data that is stored in the dataset to be properly formated (xsd:date).</p>
 <p>The insert pattern for the earliest publication date looks as follows:</p>
@@ -732,6 +821,20 @@
           </a>
         
         
+          <a href="../tool/" title="Home" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Home
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
       </nav>
     </div>
   
@@ -747,6 +850,19 @@
       </div>
       
         
+  <div class="md-footer-social">
+    <link rel="stylesheet" href="../assets/fonts/font-awesome.css">
+    
+      <a href="https://cordh.net" class="md-footer-social__link fa fa-globe"></a>
+    
+      <a href="https://github.com/cordhum" class="md-footer-social__link fa fa-github-alt"></a>
+    
+      <a href="https://wiki.cordh.net" class="md-footer-social__link fa fa-wikipedia-w"></a>
+    
+      <a href="https://twitter.com/" class="md-footer-social__link fa fa-twitter"></a>
+    
+  </div>
+
       
     </div>
   </div>

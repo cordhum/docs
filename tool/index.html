@@ -38,7 +38,7 @@
     
     
       
-        <title>Time - CORDH Data Harmonisation</title>
+        <title>Home - CORDH Data Harmonisation</title>
       
     
     
@@ -100,7 +100,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
-      <a href="#cidoc-crm-time" tabindex="1" class="md-skip">
+      <a href="#index" tabindex="1" class="md-skip">
         Skip to content
       </a>
     
@@ -126,7 +126,7 @@
                 CORDH Data Harmonisation
               </span>
               <span class="md-header-nav__topic">
-                Time
+                Home
               </span>
             
           
@@ -198,14 +198,16 @@
       
         
 
-<nav class="md-tabs" data-md-component="tabs">
+  
+
+<nav class="md-tabs md-tabs--active" data-md-component="tabs">
   <div class="md-tabs__inner md-grid">
     <ul class="md-tabs__list">
       
         
   <li class="md-tabs__item">
     
-      <a href=".." title="Home" class="md-tabs__link md-tabs__link--active">
+      <a href=".." title="Home" class="md-tabs__link">
         Home
       </a>
     
@@ -225,7 +227,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="../tool/" title="Tool" class="md-tabs__link">
+        <a href="./" title="Tool" class="md-tabs__link md-tabs__link--active">
           Tool
         </a>
       
@@ -306,20 +308,11 @@
       
       
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-      
-    
-    
-    <a href="./" title="Time" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../time/" title="Time" class="md-nav__link">
       Time
     </a>
-    
   </li>
 
     
@@ -351,10 +344,12 @@
       
       
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6" checked>
     
     <label class="md-nav__link" for="nav-6">
       Tool
@@ -370,11 +365,20 @@
           
           
 
+  
 
-  <li class="md-nav__item">
-    <a href="../tool/" title="Home" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+    <a href="./" title="Home" class="md-nav__link md-nav__link--active">
       Home
     </a>
+    
   </li>
 
         
@@ -384,7 +388,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../tool/mapping/" title="X3ML" class="md-nav__link">
+    <a href="mapping/" title="X3ML" class="md-nav__link">
       X3ML
     </a>
   </li>
@@ -422,58 +426,12 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/cordhum/docs/edit/master/docs/time.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                  <a href="https://github.com/cordhum/docs/edit/master/docs/tool/index.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                <h1 id="cidoc-crm-time">CIDOC-CRM &amp; Time<a class="headerlink" href="#cidoc-crm-time" title="Permanent link">&para;</a></h1>
-<p>Ontologically speaking, the Time dimension is quite a complicated affair. Time, in fact, has different expressions in different calendars. Moreover, different degrees of certainty and precision, make it sometimes very difficult to calculate time intervals, specifically if diverse datasets are concerned.</p>
-<p>The problem was originally tackled, at least for calculus, by Allen in 1983. </p>
-<p>In order to overcome the calculation problem, Allen defined seven relationships useful for reasoning about time intervals (X, Y):</p>
-<ol>
-<li>X before Y (P120)</li>
-<li>X meets Y (P119)</li>
-<li>X overlaps Y (P118)</li>
-<li>X during Y (P117)</li>
-<li>X starts Y (P116)</li>
-<li>X finishes Y (P115)</li>
-<li>X equals Y (P114)   </li>
-</ol>
-<p><br></p>
-<p>CIDOC-CRM was heavily influenced by this approach, and the properties associated with the Temporal entity in CRM refer exactly to these relationships.  </p>
-<ol>
-<li>P120 occurs before (occurs after)</li>
-<li>P119 meets in time with (is met in time by)</li>
-<li>P118 overlaps in time with (is overlapped in time by)</li>
-<li>P117 occurs during (includes)</li>
-<li>P116 starts (is started by)</li>
-<li>P115 finishes (is finished by)</li>
-<li>P114 is equal in time to   </li>
-</ol>
-<p><br></p>
-<p>Temporal entities in CRM have to be seen as part of a time dimension where we can calculate diversity, closeness or equality in time between described events using the Allen's operator expressions defined in CRM. However, for such objective to be achieved, it is paramount to express time intervals not only using topological relationships between temporal entities but fixed time point. This solution open up the problem of a common standard. Time expressions can, in fact, differ. The cause of this diversity is geographical, cultural, normative or just based on personal preferences. Different date values would be: </p>
-<blockquote>
-<p>1 September 1890, 01/09/1890, 1-09-1890, 09/01/1890, 1<sup>st</sup> Sept 1980</p>
-</blockquote>
-<p>While for a human it is easy to understand that they all refers to the same date, computers need precision and normalisation. In order to reason, make inferences and integrate other time-related data, it is important to use a common standardise format such as the one expressed by <a href="https://www.iso.org/standard/40874.html">ISO 8601:2004</a>, which prescribe the composition of the date using the format </p>
-<blockquote>
-<p>YYYY-MM-DD</p>
-</blockquote>
-<p>Employing the same time format helps greatly in calculating time-intervals, but sometimes it is not enough. Specifically, when talking about historical events, our statements in regard of their time can be imprecise and incomplete. </p>
-<p>In order to overcome the problem, CRM made use of Fuzzy Logic and introduced a fuzzy model where the time intervals are modelled as fuzzy volumes with inner and outer sets. The interior set is the set of all determinate (knowledgeable) time intervals, while the exterior set is the set of all the indeterminate time intervals (uncertainty).</p>
-<p><img alt="fuzzy_time" src="https://s14.postimg.cc/42xwwks81/fuzzy_time.png" /></p>
-<p>The image above help us clarify this concept. Let's assume that the event <em>x</em> {A,B} is an historical event. Our knowledge of the time interval where the event took place has some level diverse degree of certainty. We will, therefore, model these statements as certain and uncertain, where the certain statements are going to be model using the property P81, while the uncertain statements using the property P82. What we will have at the end is a larger set of time intervals (A-C + D-B in the picture) and an internal set of time intervals (C-D), correspondig respectively to imprecise and precise statements.</p>
-<p>The level of precision and imprecision is determined by the researcher carrying out the work. However, there are more clues to determine what should be considered imprecise. An event which is carried out during the course of a year is usually reported as been made in YYYY (e.g. 1894). However, such notation implies imprecision, because it literally signify a timespan ranging from 1894-01-01 till 1894-12-31. This type of notation is usually used for the creation date of a work of art, but in the majority of cases this is just an approximation, and should be recorded using the imprecise time intervals. It would be quite rare, in fact, that an artist started working the first of January and finished it off for the thirty one of December of the same year. A more precise time statement would become apparent as a result of the collection of a larger pool of statements about the artist, its artwork and its activities.</p>
-<p>Coming back to the modelling practice, as mentioned above, the the more "imprecise" statements are going to be model using the property P82.</p>
-<ul>
-<li><code>crm:P82a _begin_of_the_begin</code> identifty the beginning of the outer set of fuzzy time intervals (A)</li>
-<li><code>crm:P82b_end_of_the_end</code> identify the end of the fuzzy time intervals (B)</li>
-</ul>
-<p>The collection of P82a/b statements about the event (as well as about precedent and following events) coming from multiple institution would allow us to detect more precisly the time interval of our historical event.</p>
-<p>For defining the inner boundaries of our time intervals, and therefore the precise statements about an event, we will use P81.</p>
-<ul>
-<li><code>crm:P81a_end_of_the_begin</code> identify the end of the outer boundaries and the beginning of the internal one (C)</li>
-<li><code>crm:P81b_begin_of_the_end</code> identify the end of the internal boundary and the begin of the external one (D)</li>
-</ul>
+                <h1 id="index">Index<a class="headerlink" href="#index" title="Permanent link">&para;</a></h1>
+<p>This section of the website is dedicated to practical tools to used for mapping data to CIDOC-CRM.</p>
+<p><a href="mapping/">X3ML</a> provides mapping examples used by the consortium for mapping their XML data to RDF.</p>
                 
                   
                 
@@ -494,7 +452,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../modelling/" title="Entities" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../bibliographic_data/" title="Bibliographic Data" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -503,19 +461,19 @@
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Entities
+                Bibliographic Data
               </span>
             </div>
           </a>
         
         
-          <a href="../Images/" title="Images" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="mapping/" title="X3ML" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Images
+                X3ML
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">
