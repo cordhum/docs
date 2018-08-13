@@ -1,5 +1,5 @@
 site_name: CORDH Data Harmonisation
-repo_url: https://github.com/ncarboni/arthistorydata
+repo_url: https://github.com/cordhum/docs
 site_description: CORDH Data Harmonisation Working Group
 pages:
     - Home: index.md
