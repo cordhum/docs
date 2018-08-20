@@ -242,9 +242,13 @@ A place is a section of space identified independently from its temporal status.
 
 The spatial coordinates of a place can be modelled in CIDOC-CRM as 
 
-**E53 Place → P87 is identified by →  E47 Spatial Coordinates**
+**E53 Place → P168 place is defined by →  E94 Space Primitive**
 
-The encoding of the latitude and longitude can be done in multiple ways. The form chosen by the consortium is to rely on a basic RDF vocabulary for representing latitude and longitude using WGS84 as a reference system. In order to do so, we will have to map the class crm:E47_Spatial_Coordinates with the corresponding class in [W3C-Basic-Geo](https://www.w3.org/2003/01/geo/).
+The encoding of the latitude and longitude can be done in multiple ways. 
+The form chosen by the consortium is to rely on WKT as exchange format...
+
+
+a basic RDF vocabulary for representing latitude and longitude using WGS84 as a reference system. In order to do so, we will have to map the class crm:E47_Spatial_Coordinates with the corresponding class in [W3C-Basic-Geo](https://www.w3.org/2003/01/geo/).
 
 We can declare geo:Point as a subclass of crm:E47_Spatial_Coordinates with the following
 
@@ -263,11 +267,9 @@ Having mapped crm:E47_Spatial_Coordinates to geo:Point we can use two new proper
 To describe, respectively, the latitude and longitude of an E53 Place.
 
 ```turtle
-https://collection.itatti.harvard.edu/resource/ex/place/ a crm:E53_Place ;
-crm:P87_is_identified_by https://collection.itatti.harvard.edu/resource/ex/place/point .
-a wgs:Point;
-wgs:lat "60.1701801" ;
-wgs:long “24.9419037" .
+<https://collection.itatti.harvard.edu/resource/ex/place>
+        a                             crm:E53_Place ;
+        crm:P168_place_is_defined_by  "POINT (9.1232696 45.2503146)"^^geo:wktLiteral ;
 ```
 
 *<small>Codebox 8 - Latitude and Longitude of a Place</small>*
