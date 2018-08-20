@@ -24,3 +24,13 @@
       color: #782C22; }
 .md-typeset a {
     color: #782C22; }
+
+.md-typeset details > summary {
+background-color: #782c2221;
+}
+.md-typeset details {
+	border-left: #782C22;
+}
+.md-typeset details > summary::before {
+	color: #782C22;
+	}
