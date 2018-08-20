@@ -1,0 +1,26 @@
+/* .md-header {
+	background-color: #782C22;	
+}
+
+.md-tabs {
+	background-color: #782C22;	
+} 
+
+.md-nav__title--site
+{
+	background-color: #782C22;
+} */
+
+.md-footer-nav {
+	background-color: #782C22;
+}
+.md-footer-meta {
+	background-color: #782C22;
+}
+.md-nav__link--active {
+	color: #782C22;
+}
+.md-nav__link:focus, .md-nav__link:hover {
+      color: #782C22; }
+.md-typeset a {
+    color: #782C22; }

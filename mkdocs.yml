@@ -25,19 +25,20 @@ pages:
     - Tool: 
         - Home: tool/index.md
         - X3ML: tool/mapping.md
-    - Meetings:
-        - Home: meetings/index.md
-#        - Meeting 08-08-2018: meetings/08-08-2018.md
  
 
 theme: 
   name: material
-  logo:
-    icon: description
+  logo: 'images/logo.png'
+  theme:
   palette:
-    primary: red
+    primary: 'white'
+  favicon: 'images/favicon.ico'
   feature:
     tabs: true
+
+extra_css:
+  - 'stylesheets/extra.css'
 
 markdown_extensions:
   - pymdownx.smartsymbols
