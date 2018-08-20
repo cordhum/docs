@@ -25,6 +25,10 @@ pages:
     - Tool: 
         - Home: tool/index.md
         - X3ML: tool/mapping.md
+    - Meetings:
+        - Home: meetings/index.md
+#        - Meeting 08-08-2018: meetings/08-08-2018.md
+ 
 
 theme: 
   name: material
