@@ -980,8 +980,10 @@ Change to dateTime
 <p>A place is a section of space identified independently from its temporal status. They are usually referenced using absolute (WGS, EPSG) or relative reference systems. Absolute reference system uses point-based coordinates to identify the representation of a space.</p>
 <h3 id="longitude-latitude">Longitude &amp; Latitude<a class="headerlink" href="#longitude-latitude" title="Permanent link">&para;</a></h3>
 <p>The spatial coordinates of a place can be modelled in CIDOC-CRM as </p>
-<p><strong>E53 Place → P87 is identified by →  E47 Spatial Coordinates</strong></p>
-<p>The encoding of the latitude and longitude can be done in multiple ways. The form chosen by the consortium is to rely on a basic RDF vocabulary for representing latitude and longitude using WGS84 as a reference system. In order to do so, we will have to map the class crm:E47_Spatial_Coordinates with the corresponding class in <a href="https://www.w3.org/2003/01/geo/">W3C-Basic-Geo</a>.</p>
+<p><strong>E53 Place → P168 place is defined by →  E94 Space Primitive</strong></p>
+<p>The encoding of the latitude and longitude can be done in multiple ways. 
+The form chosen by the consortium is to rely on WKT as exchange format...</p>
+<p>a basic RDF vocabulary for representing latitude and longitude using WGS84 as a reference system. In order to do so, we will have to map the class crm:E47_Spatial_Coordinates with the corresponding class in <a href="https://www.w3.org/2003/01/geo/">W3C-Basic-Geo</a>.</p>
 <p>We can declare geo:Point as a subclass of crm:E47_Spatial_Coordinates with the following</p>
 <p><table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2
@@ -999,13 +1001,9 @@ Change to dateTime
 <p>To describe, respectively, the latitude and longitude of an E53 Place.</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2
-3
-4
-5</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="err">https</span><span class="p">:</span><span class="err">//collection</span><span class="p">.</span><span class="err">itatti</span><span class="p">.</span><span class="err">harvard</span><span class="p">.</span><span class="err">edu/resource/ex/place/</span><span class="w"> </span><span class="kt">a</span><span class="w"> </span><span class="nn">crm:</span><span class="nt">E53_Place</span><span class="w"> </span><span class="p">;</span><span class="w"></span>
-<span class="nn">crm:</span><span class="nt">P87_is_identified_by</span><span class="w"> </span><span class="err">https</span><span class="p">:</span><span class="err">//collection</span><span class="p">.</span><span class="err">itatti</span><span class="p">.</span><span class="err">harvard</span><span class="p">.</span><span class="err">edu/resource/ex/place/point</span><span class="w"> </span><span class="p">.</span><span class="w"></span>
-<span class="kt">a</span><span class="w"> </span><span class="nn">wgs:</span><span class="nt">Point</span><span class="p">;</span><span class="w"></span>
-<span class="nn">wgs:</span><span class="nt">lat</span><span class="w"> </span><span class="s">&quot;60.1701801&quot;</span><span class="w"> </span><span class="p">;</span><span class="w"></span>
-<span class="nn">wgs:</span><span class="nt">long</span><span class="w"> </span><span class="err">“</span><span class="mf">24.9419037</span><span class="s">&quot; .</span>
+3</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="nv">&lt;https://collection.itatti.harvard.edu/resource/ex/place&gt;</span><span class="w"></span>
+<span class="w">        </span><span class="kt">a</span><span class="w">                             </span><span class="nn">crm:</span><span class="nt">E53_Place</span><span class="w"> </span><span class="p">;</span><span class="w"></span>
+<span class="w">        </span><span class="nn">crm:</span><span class="nt">P168_place_is_defined_by</span><span class="w">  </span><span class="s">&quot;POINT (9.1232696 45.2503146)&quot;</span><span class="o">^^</span><span class="ge">geo:wktLiteral</span><span class="w"> </span><span class="p">;</span><span class="w"></span>
 </pre></div>
 </td></tr></table>
 
