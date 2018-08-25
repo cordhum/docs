@@ -1,5 +1,4 @@
-# CORDH Data Harmonisation Group  
-
+# Data Harmonization
 
 The website outlines modelling choices in relation to diverse entities described in the Consortium's data. The modelling is provided, whenever possible, using CIDOC-CRM. However, in certain cases, other ontologies are used. 
 For each of the described entities, diverse encoding choices were outlined, and a decision about each of them was made. The scope of this document is not to provide a track of this process, but just to present its results. The documentation of the possible modelling and encoding of an entity in RDF can be found in the [Annex A](#).

@@ -1,6 +1,6 @@
-site_name: CORDH Data Harmonisation
+site_name: Consortium for Open Research Data in the Humanities
 repo_url: https://github.com/cordhum/docs
-site_description: CORDH Data Harmonisation Working Group
+site_description: CORDh documentation
 
 # Customization
 extra:
@@ -17,19 +17,19 @@ extra:
 
 # pagination  
 pages:
-    - Home: index.md
+    - Data Harmonization: index.md
     - Entities: modelling.md
     - Time: time.md
     - Images: Images.md
     - Bibliographic Data: bibliographic_data.md
-    - Tool: 
+    - Tools: 
         - Home: tool/index.md
         - X3ML: tool/mapping.md
  
 
 theme: 
   name: material
-  logo: 'images/logo.png'
+  logo: 'images/logo_icon.png'
   theme:
   palette:
     primary: 'white'
