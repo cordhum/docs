@@ -20,7 +20,7 @@ pages:
     - Data Harmonization: index.md
     - Entities: modelling.md
     - Time: time.md
-    - Images: Images.md
+    - Images: images.md
     - Bibliographic Data: bibliographic_data.md
     - Tools: 
         - Home: tool/index.md
