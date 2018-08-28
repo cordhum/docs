@@ -29,7 +29,7 @@ pages:
 
 theme: 
   name: material
-  logo: 'images/logo_icon.png'
+  logo: 'images/logo_image.svg'
   theme:
   palette:
     primary: 'white'
