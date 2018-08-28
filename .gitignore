@@ -1,4 +1,8 @@
-
+docs/.Python
+docs/bin/
+docs/include/
+docs/lib/
+docs/pip-selfcheck.json
 .DS_Store
 .couscous
 site/
