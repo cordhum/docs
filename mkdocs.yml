@@ -1,0 +1,54 @@
+site_name: Consortium for Open Research Data in the Humanities
+repo_url: https://github.com/cordhum/docs
+site_description: CORDh documentation
+
+# Customization
+extra:
+  social:
+    - type: globe
+      link: https://cordh.net
+    - type: github-alt
+      link: https://github.com/cordhum
+    - type: wikipedia-w
+      link: https://wiki.cordh.net
+    - type: twitter
+      link: https://twitter.com/
+  
+
+# pagination  
+pages:
+    - Data Harmonization: index.md
+    - Entities: modelling.md
+    - Time: time.md
+    - Images: Images.md
+    - Bibliographic Data: bibliographic_data.md
+    - Tools: 
+        - Home: tool/index.md
+        - X3ML: tool/mapping.md
+ 
+
+theme: 
+  name: material
+  logo: 'images/logo_icon.png'
+  theme:
+  palette:
+    primary: 'white'
+  favicon: 'images/favicon.ico'
+  feature:
+    tabs: true
+
+extra_css:
+  - 'stylesheets/extra.css'
+
+markdown_extensions:
+  - pymdownx.smartsymbols
+  - pymdownx.mark
+  - pymdownx.details
+  - pymdownx.superfences
+  - meta
+  - footnotes
+  - admonition
+  - toc:
+      permalink: true
+  - codehilite:
+      linenums: true
