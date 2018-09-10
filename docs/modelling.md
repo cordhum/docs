@@ -242,37 +242,30 @@ A place is a section of space identified independently from its temporal status.
 
 The spatial coordinates of a place can be modelled in CIDOC-CRM as 
 
-**E53 Place → P168 place is defined by →  E94 Space Primitive**
+**E53 Place → P168 place is defined by → E94 Space Primitive**
 
-The encoding of the latitude and longitude can be done in multiple ways. 
-The form chosen by the consortium is to rely on WKT as exchange format...
-
-
-a basic RDF vocabulary for representing latitude and longitude using WGS84 as a reference system. In order to do so, we will have to map the class crm:E47_Spatial_Coordinates with the corresponding class in [W3C-Basic-Geo](https://www.w3.org/2003/01/geo/).
-
-We can declare geo:Point as a subclass of crm:E47_Spatial_Coordinates with the following
-
-```turtle
-<rdfs:Class rdf:about="http://www.w3.org/2003/01/geo/wgs84_pos#Point">
-    <rdfs:subClassOf rdf:resource="E47_Spatial_Coordinates"/>
-</rdfs:Class>
-```
-*<small>Codebox 7</small>*
-
-Having mapped crm:E47_Spatial_Coordinates to geo:Point we can use two new properties
-
- * geo:lat
- * geo:long
-
-To describe, respectively, the latitude and longitude of an E53 Place.
+The encoding of the Space Primitive can be done using GML/WKT and other ways. WKT is the form chosen by the consortium because of its compactness, case insensitivity and cross-domain support. The codebox below is an example of the encoding of a Place  using wktLiteral:
 
 ```turtle
 <https://collection.itatti.harvard.edu/resource/ex/place>
-        a                             crm:E53_Place ;
+        a crm:E53_Place ;
         crm:P168_place_is_defined_by  "POINT (9.1232696 45.2503146)"^^geo:wktLiteral ;
 ```
+*<small>Codebox 7</small>*
 
-*<small>Codebox 8 - Latitude and Longitude of a Place</small>*
+However, sometimes WKT is not accepted and providing separate attribute for latitude and longitude is necessary. In this case we rely on locn:geometry property from the [ISA Programme Location Core Vocabulary](https://www.w3.org/ns/locn#locn:Geometry) for defining the geometry of the place and [W3C-Basic-Geo](https://www.w3.org/2003/01/geo/) for specifying the latitude and longitude.
+
+
+```turtle
+<https://collection.itatti.harvard.edu/resource/ex/place>
+        a crm:E53_Place ;
+        crm:P168_place_is_defined_by  "POINT (9.1232696 45.2503146)"^^geo:wktLiteral ;
+         locn:geometry [
+      geo:lat "51.477811" ;
+      geo:long "-0.001475"
+    ] .
+```
+*<small>Codebox 8</small>*
 
 
 
