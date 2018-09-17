@@ -135,9 +135,9 @@ rdfs:label "果戈里" .
 
 Dimension are measurable data which results from an observation. The outcome of an observation is always to be seen as a couple value/system where the meaning of the value is dependant on the system used.
 
-Dimensions can be modelled in CRM as:
-**E54 Dimension → P91 has unit →  E58 Measurement Unit**
-**E54 Dimension → P90 has value →  E60 Number**
+Dimensions can be modelled in CRM as:  
+**E54 Dimension → P91 has unit →  E58 Measurement Unit**  
+**E54 Dimension → P90 has value →  E60 Number**  
 
 The modelling above is based on the differentiation between the value and the system which provide meaning to the value. 
 
