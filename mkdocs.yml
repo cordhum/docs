@@ -6,7 +6,7 @@ site_description: CORDh documentation
 extra:
   social:
     - type: globe
-      link: https://cordh.net
+      link: https://www.cordh.net
     - type: github-alt
       link: https://github.com/cordhum
     - type: wikipedia-w
