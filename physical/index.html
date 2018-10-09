@@ -38,7 +38,7 @@
     
     
       
-        <title>Info - Consortium for Open Research Data in the Humanities</title>
+        <title>Physical pattern - Consortium for Open Research Data in the Humanities</title>
       
     
     
@@ -102,7 +102,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
-      <a href="../#index" tabindex="1" class="md-skip">
+      <a href="../#physical-entities-patterns" tabindex="1" class="md-skip">
         Skip to content
       </a>
     
@@ -130,7 +130,7 @@
               </span> 
            
               <span class="md-header-nav__topic">
-                Info
+                Physical pattern
               </span>
             
           
@@ -258,10 +258,12 @@
       
       
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" checked>
     
     <label class="md-nav__link" for="nav-2">
       Patterns
@@ -301,11 +303,62 @@
           
           
 
+  
 
-  <li class="md-nav__item">
-    <a href="../physical/" title="Physical pattern" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Physical pattern
+      </label>
+    
+    <a href="./" title="Physical pattern" class="md-nav__link md-nav__link--active">
       Physical pattern
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#features" title="Features" class="md-nav__link">
+    Features
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#watermark-and-signature" title="watermark and signature" class="md-nav__link">
+    watermark and signature
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
   </li>
 
         
@@ -354,12 +407,10 @@
       
       
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+  <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6" checked>
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6">
     
     <label class="md-nav__link" for="nav-6">
       Tools
@@ -375,20 +426,11 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-      
-    
-    
-    <a href="./" title="Info" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../tool/" title="Info" class="md-nav__link">
       Info
     </a>
-    
   </li>
 
         
@@ -398,7 +440,7 @@
 
 
   <li class="md-nav__item">
-    <a href="mapping/" title="X3ML" class="md-nav__link">
+    <a href="../tool/mapping/" title="X3ML" class="md-nav__link">
       X3ML
     </a>
   </li>
@@ -426,6 +468,35 @@
     
   
   
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#features" title="Features" class="md-nav__link">
+    Features
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#watermark-and-signature" title="watermark and signature" class="md-nav__link">
+    watermark and signature
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -436,12 +507,64 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/cordhum/docs/edit/master/docs/tool/index.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                  <a href="https://github.com/cordhum/docs/edit/master/docs/physical.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                <h1 id="index">Index<a class="headerlink" href="#index" title="Permanent link">&para;</a></h1>
-<p>This section of the website is dedicated to practical tools to used for mapping data to CIDOC-CRM.</p>
-<p><a href="mapping/">X3ML</a> provides mapping examples used by the consortium for mapping their XML data to RDF.</p>
+                <h1 id="physical-entities-patterns">Physical Entities: patterns<a class="headerlink" href="#physical-entities-patterns" title="Permanent link">&para;</a></h1>
+<p><em>Introduction</em></p>
+<p>The document outlines modelling choices in relation to physical entities such as physical objects, their parts or their features. The modelling of statements which specify properties, both measured or assigned to the physical object, such as its dimension, or its position in space, are going to be described here.
+The modelling are provide as CRM patterns as well as in their encoded form using a real-world statements from one of our case studies. The syntax of the encoding is Turtle, and all the prefix used can be found on http://prefix.cc/.</p>
+<h2 id="features">Features<a class="headerlink" href="#features" title="Permanent link">&para;</a></h2>
+<p>The physical feature of an object refers to an identifiable sign which are integrally part of the object. A physical feature it is not defined by specific borders (however, it can), and it cannot be detach to the object which carries it.</p>
+<p>The association of an object with its feature in CRM can be modelled as :</p>
+<p><strong>E22 Man-Made Object → P56 bears feature → E26 Physical Feature</strong></p>
+<p>or, if we are talking about man-made feature: </p>
+<p><strong>E22 Man-Made Object → P56 bears feature → E25 Man-made Feature</strong> </p>
+<h4 id="watermark-and-signature">watermark and signature<a class="headerlink" href="#watermark-and-signature" title="Permanent link">&para;</a></h4>
+<p>Watermarks and signatures are both typical features of an object, specifically man-made feature, because their identity is not natural but man given. </p>
+<p>Following the modelling above, we can state the fact that an object as a man-made feature as </p>
+<p><strong>E22 Man-Made Object → P56 bears feature → E25 Man-made Feature</strong> </p>
+<p>However, for the example to be complete we should make explicit that the object has two features, a signature and a watermark, each of them has a type, and carries a linguistic object. Formally, both they are made explicit as:</p>
+<p><strong>E25 Man-made Feature → P128 carries → E33 Linguistic Object</strong>  <br />
+<strong>E25 Man-made Feature → P2 has type → E55 Type</strong>   </p>
+<p>The following codebox provide an example of its encoding </p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="nv">&lt;#work/6004987&gt;</span><span class="w"> </span><span class="kt">a</span><span class="w"> </span><span class="nn">crm:</span><span class="nt">E22_Man-Made_Object</span><span class="w"> </span><span class="p">;</span><span class="w"></span>
+<span class="nn">crm:</span><span class="nt">P56_bears_feature</span><span class="w"> </span><span class="nv">&lt;https://example.sikart.ch/6004987/feature/1&gt;</span><span class="w"> </span><span class="p">,</span><span class="w"> </span><span class="nv">&lt;https://example.sikart.ch/6004987/feature/2&gt;</span><span class="w"> </span><span class="p">.</span><span class="w"></span>
+
+<span class="nv">&lt;https://example.sikart.ch/6004987/feature/1&gt;</span><span class="w"> </span><span class="kt">a</span><span class="w"> </span><span class="nn">crm:</span><span class="nt">E26_Physical_Feature</span><span class="w"> </span><span class="p">;</span><span class="w"> </span>
+<span class="nn">crm:</span><span class="nt">P128_carries</span><span class="w"> </span><span class="nv">&lt;https://example.sikart.ch/text_object/1&gt;</span><span class="w"> </span><span class="p">;</span><span class="w"></span>
+<span class="nn">crm:</span><span class="nt">P2_has_type</span><span class="w"> </span><span class="nv">&lt;http://vocab.getty.edu/page/aat/300028749&gt;</span><span class="w"> </span><span class="p">.</span><span class="w"></span>
+
+<span class="nv">&lt;https://example.sikart.ch/text_object/1&gt;</span><span class="w"> </span><span class="kt">a</span><span class="w"> </span><span class="nn">crm:</span><span class="nt">E33_Linguistic_Object</span><span class="w"> </span><span class="p">;</span><span class="w"></span>
+<span class="nn">rdfs:</span><span class="nt">label</span><span class="w"> </span><span class="s">&quot;nicht identifizierbar»&quot;</span><span class="w"> </span><span class="p">;</span><span class="w"></span>
+
+<span class="nv">&lt;https://example.sikart.ch/6004987/feature/2&gt;</span><span class="w"> </span><span class="kt">a</span><span class="w"> </span><span class="nn">crm:</span><span class="nt">E26_Physical_Feature</span><span class="w"> </span><span class="p">;</span><span class="w"> </span>
+<span class="nn">crm:</span><span class="nt">P128_carries</span><span class="w"> </span><span class="nv">&lt;https://example.sikart.ch/text_object/2&gt;</span><span class="w"> </span><span class="p">;</span><span class="w"></span>
+<span class="nn">crm:</span><span class="nt">P2_has_type</span><span class="w"> </span><span class="nv">&lt;http://vocab.getty.edu/page/aat/300028705&gt;</span><span class="w"> </span><span class="p">;</span><span class="w"></span>
+<span class="nn">crm:</span><span class="nt">P2_has_type</span><span class="w"> </span><span class="nv">&lt;#type/SIGNATURE&gt;</span><span class="w"> </span><span class="p">.</span><span class="w"></span>
+
+<span class="nv">&lt;https://example.sikart.ch/text_object/2&gt;</span><span class="w"> </span><span class="kt">a</span><span class="w"> </span><span class="nn">crm:</span><span class="nt">E33_Linguistic_Object</span><span class="w"> </span><span class="p">;</span><span class="w"></span>
+<span class="nn">rdfs:</span><span class="nt">label</span><span class="w"> </span><span class="s">&quot;bez. u. r.: «F. Hodler.»&quot;</span><span class="w"> </span><span class="p">;</span><span class="w"></span>
+</pre></div>
+</td></tr></table>
+
+<p><em><small>Codebox 1  - watermark and signature</small></em></p>
                 
                   
                 
@@ -462,7 +585,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../bibliographic_data/" title="Bibliographic Data" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../temporal/" title="Temporal pattern" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -471,19 +594,19 @@
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Bibliographic Data
+                Temporal pattern
               </span>
             </div>
           </a>
         
         
-          <a href="mapping/" title="X3ML" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../time/" title="Time" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                X3ML
+                Time
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">
