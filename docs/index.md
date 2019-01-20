@@ -7,4 +7,4 @@ For each entity, as an example of its use, an RDF encoding of a real-world state
 
 On the left of the screen, the reader can see the sections of the website. The entry [Entities](modelling/) outline the main basic modelling choices with explanations and examples. While the majority of the modelling examples are in the [Entities](modelling/) section, for some specific subject, where we deemed that more explanation would be needed, we decided to have some special sections. It is the case of [Time](Time/), [Bibliographic Data](bibliographic_data/) and [Images](Images/). 
 
-Comments and further explanations can be opened as issues in [Github](https://github.com/ncarboni/arthistorydata/).
+Comments and further explanations can be opened as issues in [Github](https://github.com/cordhum/docs).
