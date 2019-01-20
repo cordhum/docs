@@ -1,0 +1,22 @@
+env:
+  global:
+    secure: WVxNTBQDLr7Ene6lnPE1ZtjVBCE/7CCqAnv9xSPjKFwJmfT7R8VUAtrcLWNPhV505eqRDNDE33/iIB/kuj4E2+brgR4nPnZ0ZPwc7Mzs64Vme1pQJ0r8wj5Cg+B4Nm3JNCA4so3QdV8u4tPG41lEe7dvwHHzn1oQodEb8Xjh3sERVmIUkt70T0IJEjHhShVMElDUC0/5wJ85M8RvKPXMMJof/0zY/ji9nvGptnGbvtPYa7qf97REN4rD5DgGf54reuRQQG1mgvotbr114frf7tDNkCqA9go9BjB/gYY9I3WPiDziiLuKvYNaqfazSNvLSBRSiwtQebKbrr/sncdogk/AtzmrOzNmEf3zliwwcG22NpX3uayVQ3Zs28M3rLhzM+kfS3l4qD0GHbr1JqgXzmuQPlIlEcugT4qbUsrh/OUTjJ8LE6Fq7TxCC9L3DsgMQWbylMNJWywQlOZVJkj5EC4Q+oGWPM/g5hWh06FQ4kbChusffV3sJQuROiSoUokEt1lN5/IgbqhQvdVofVH5AuxKS5i30d8hVQhlAYN0IqjgLvnOw3sO2g0+QIL8vYZJVqDrQebtSgCAY4iqKDo7y7V65OeAqBK926eFtwn6PATMOazNOrHYmlu9si4Dh7PHZXBwLNpC30yxN4lXPqpvTvDCQe1gnU7Q2AOvdQTRVQ0=
+
+language: python # Set the build language to Python
+
+branches: master # Set the branch to build from
+
+install:
+    - pip install mkdocs # Install the required dependencies
+    - pip install mkdocs-material
+#    - pip install pymdown-extensions
+#    - pip install pygments
+
+script:
+- git clean -f -d -x
+after_success:
+- git config user.name "Nicola Carboni"
+- git config user.email "nicola@carboni.me"
+- git remote add gh-token "https://${GH_TOKEN}@github.com/cordhum/docs.git";
+- git fetch gh-token && git fetch gh-token gh-pages:gh-pages;
+- mkdocs gh-deploy -v --clean --remote-name gh-token;
