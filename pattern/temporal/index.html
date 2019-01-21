@@ -1,0 +1,677 @@
+
+
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+        <meta name="description" content="SARI documentation">
+      
+      
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../../images/favicon.ico">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-3.2.0">
+    
+    
+      
+        <title>Temporal - SARI Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/application.572ca0f0.css">
+      
+        <link rel="stylesheet" href="../../assets/stylesheets/application-palette.22915126.css">
+      
+      
+        
+        
+        <meta name="theme-color" content="">
+      
+    
+    
+      <script src="../../assets/javascripts/modernizr.8c900955.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700|IBM+Plex+Mono">
+        <style>body,input{font-family:"Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"IBM Plex Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../../assets/fonts/material-icons.css">
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+      <link rel="stylesheet" href="../../stylesheets/lightbox.css">
+    
+    
+  </head>
+  
+    
+    
+    <body dir="ltr" data-md-color-primary="white" data-md-color-accent="">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#temporal-entities-patterns" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="../.." title="SARI Documentation" class="md-header-nav__button md-logo">
+          
+            <img src="../../images/logo.png" width="24" height="24">
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            
+              <span class="md-header-nav__topic">
+                SARI Documentation
+              </span>
+              <span class="md-header-nav__topic">
+                Temporal
+              </span>
+            
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          
+            <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+            
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+          
+        
+      </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href="../.." title="SARI Documentation" class="md-nav__button md-logo">
+      
+        <img src="../../images/logo.png" width="48" height="48">
+      
+    </a>
+    SARI Documentation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../.." title="Project Home" class="md-nav__link">
+      Project Home
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
+    
+    <label class="md-nav__link" for="nav-2">
+      Entity Reference Model
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        Entity Reference Model
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../instruction/" title="Instruction" class="md-nav__link">
+      Instruction
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../et/person/" title="Artist" class="md-nav__link">
+      Artist
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../et/artwork/" title="Artwork" class="md-nav__link">
+      Artwork
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" checked>
+    
+    <label class="md-nav__link" for="nav-3">
+      Modelling Examples
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        Modelling Examples
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../instruction/" title="Instruction" class="md-nav__link">
+      Instruction
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../general/" title="Shared" class="md-nav__link">
+      Shared
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Temporal
+      </label>
+    
+    <a href="./" title="Temporal" class="md-nav__link md-nav__link--active">
+      Temporal
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#creation-of-an-artefact" title="Creation of an artefact" class="md-nav__link">
+    Creation of an artefact
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#technique-used" title="Technique used" class="md-nav__link">
+    Technique used
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#agency" title="Agency" class="md-nav__link">
+    Agency
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#agent-role-in-the-activity" title="Agent role in the activity" class="md-nav__link">
+    Agent role in the activity
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exhibition" title="Exhibition" class="md-nav__link">
+    Exhibition
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#provenance-of-an-object" title="Provenance of an object" class="md-nav__link">
+    Provenance of an object
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../physical/" title="Physical" class="md-nav__link">
+      Physical
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
+    
+    <label class="md-nav__link" for="nav-4">
+      Ontology Extension
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        Ontology Extension
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../schema/" title="Extension" class="md-nav__link">
+      Extension
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#creation-of-an-artefact" title="Creation of an artefact" class="md-nav__link">
+    Creation of an artefact
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#technique-used" title="Technique used" class="md-nav__link">
+    Technique used
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#agency" title="Agency" class="md-nav__link">
+    Agency
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#agent-role-in-the-activity" title="Agent role in the activity" class="md-nav__link">
+    Agent role in the activity
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exhibition" title="Exhibition" class="md-nav__link">
+    Exhibition
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#provenance-of-an-object" title="Provenance of an object" class="md-nav__link">
+    Provenance of an object
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="temporal-entities-patterns">Temporal Entities: patterns<a class="headerlink" href="#temporal-entities-patterns" title="Permanent link">&para;</a></h1>
+<p><em>Introduction</em></p>
+<p>The document outlines modelling choices in relation to temporal entities such as activities and statements which specify agency, causality, and other properties that, within CRM, can be considered to belong to this domain.</p>
+<p>The modelling choices are recorded as generalisable patterns. Each pattern is made explicit using an example which it is both encoded in <a href="https://www.w3.org/TR/rdf11-mt/">RDF</a> using <a href="https://www.w3.org/TR/turtle/">Turtle</a> and presented as a codebox and in a graphical form. 
+Each codebox is hosted as <a href="https://gist.github.com">Gist</a> on <a href="https://github.com">GitHub</a> and embedded on the page. This solution have been taken to give the possibility to the readers to comment, download and embed the codebox. 
+Each graphical representation of the codebox is created using the <a href="https://github.com/usc-isi-i2/ontology-visualization">ontologyviz</a> tool. It is possible to click on the pictures to enlarge it.</p>
+<p>All the prefix used within the document can be found on <a href="http://prefix.cc/">http://prefix.cc/</a>.</p>
+<h2 id="creation-of-an-artefact">Creation of an artefact<a class="headerlink" href="#creation-of-an-artefact" title="Permanent link">&para;</a></h2>
+<p>We model the physical creation of artefacts, such as paintings or photos, using the class E12 Production, a subclass of Event which described a specific activity which result in the creation of one or more new physical object. 
+This type of creation is modelled in CRM using the E12 Production Entity, using the pattern:</p>
+<p><strong class="modelling">E22 Man-Made Object → P108 was produced by → E12 Production</strong></p>
+<h3 id="technique-used">Technique used<a class="headerlink" href="#technique-used" title="Permanent link">&para;</a></h3>
+<p>A production itself can be contextualised using diverse properties that augment the information about this activity.A quite important one for us was the technique used. The CRM modelling follow:</p>
+<p><strong class="modelling">E12 Production → P33 used specific technique → E29 Design or Procedure</strong></p>
+<p>The encoding of the modelling in Turtle is pretty straightforward:</p>
+<p><br>
+<script src="https://gist.github.com/ncarboni/cb1fd5c26d19faf9bf3432c724c6a1ce.js"></script></p>
+<p><strong>Codebox 1. Technique.</strong> Click <a href="https://gist.github.com/ncarboni/cb1fd5c26d19faf9bf3432c724c6a1ce#file-technique-ttl">here</a> to comment the modelling.</p>
+<h3 id="agency">Agency<a class="headerlink" href="#agency" title="Permanent link">&para;</a></h3>
+<p>Another important aspect to declare is the agency within an activity, which can be modelled simply as:</p>
+<p><strong class="modelling">E12 Production → P14 carried out by → E21 Person</strong></p>
+<p>While the encoding of the modelling in Turtle can be seen below
+<br>
+<script src="https://gist.github.com/ncarboni/e4c475519a1c2715dcc8de9d4a275bcb.js"></script></p>
+<p><strong>Codebox 1 . Agency</strong>. Click <a href="https://gist.github.com/ncarboni/e4c475519a1c2715dcc8de9d4a275bcb#file-agency-ttl">here</a> to comment the modelling.</p>
+<h4 id="agent-role-in-the-activity">Agent role in the activity<a class="headerlink" href="#agent-role-in-the-activity" title="Permanent link">&para;</a></h4>
+<p>The role of the actor within the activity can be further modelled with a role. The modelling of this pattern is a bit more complicated matter. It would be:</p>
+<p><strong class="modelling">E12 Production → P01 is domain of → PC14 carried out by</strong> <br />
+<strong class="modelling">PC14 carried out by → P012 has range → E21 Person</strong> <br />
+<strong class="modelling">PC14 carried out by → P14.1 in the role of → E55Type</strong>   </p>
+<p>We document in great details this modelling pattern in the corresponding <a href="#roles">General section</a>. An example related to the production event would be the following</p>
+<script src="https://gist.github.com/ncarboni/60782ef795e536714ff7a969292f3b34.js"></script>
+
+<p><strong>Codebox 2. Production: agent role</strong>. Click <a href="https://gist.github.com/ncarboni/60782ef795e536714ff7a969292f3b34#file-role-ttl">here</a> to comment the modelling.</p>
+<h2 id="exhibition">Exhibition<a class="headerlink" href="#exhibition" title="Permanent link">&para;</a></h2>
+<p>We model temporary exhibitions as activities, because of their existence in time. Moving exhibitions, which do keep their collection but change location/museum are also modelled as a bigger activity (the whole exhibit), which are composed by sub-activities which do they take place in diverse locations. </p>
+<p>The modelling using CIDOC-CRM is quite simple:</p>
+<p><strong class="modelling">E7 Activity → P9 consist of → E7 Activity</strong></p>
+<p>For a better understanding in the codebox below it is possible to see how an exhibition has been modelled as composed by two different one, each of them happening at a different time and place. </p>
+<script src="https://gist.github.com/ncarboni/ecb97d4ee4cc04d49056d461939e05a1.js"></script>
+
+<p><strong>Codebox 3. Exhibition</strong>. Click <a href="https://gist.github.com/ncarboni/ecb97d4ee4cc04d49056d461939e05a1#file-exhibition-ttl">here</a> to comment the modelling.</p>
+<h2 id="provenance-of-an-object">Provenance of an object<a class="headerlink" href="#provenance-of-an-object" title="Permanent link">&para;</a></h2>
+<p>We model the provenance of an object as a series of acquisition events, which transfer object from person to person. This allow us to follow the object throughout the years. This solution it is not perfect, because in an open world it does not imply that the object stay with the same owner between acquisition events (despite the fact that we do know about it). A better modelling would be using a State which, however, are not fully considered within CRM at the moment of writing this document.
+While the solution it is not better, it is still quite functional and can be seen in the codebox below where three diverse acquisition events are modelled</p>
+<script src="https://gist.github.com/ncarboni/a9f973abdd24d06638fc14dec4ab157a.js"></script>
+
+<p><strong>Codebox 4. Provenance</strong>. Click <a href="https://gist.github.com/ncarboni/a9f973abdd24d06638fc14dec4ab157a#file-provenance-ttl">here</a> to comment the modelling.</p>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../general/" title="Shared" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Shared
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../physical/" title="Physical" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Physical
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        powered by
+        <a href="https://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+        
+  <div class="md-footer-social">
+    <link rel="stylesheet" href="../../assets/fonts/font-awesome.css">
+    
+      <a href="" class="md-footer-social__link fa fa-globe"></a>
+    
+      <a href="https://swissartresearch.net" class="md-footer-social__link fa fa-"></a>
+    
+  </div>
+
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../assets/javascripts/application.b41f3d20.js"></script>
+      
+      <script>app.initialize({version:"1.0.4",url:{base:"../.."}})</script>
+      
+        <script src="../../js/lightbox-plus-jquery.min.js"></script>
+      
+    
+    
+      
+    
+  </body>
+</html>
