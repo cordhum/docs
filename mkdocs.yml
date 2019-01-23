@@ -16,27 +16,24 @@ extra:
   
 
 # pagination  
-pages:
-    - Data Harmonization: index.md
-    - Entities: modelling.md
+nav:
+    - About: index.md
+    - Shared Patterns: modelling.md
     - Time: time.md
     - Images: images.md
     - Bibliographic Data: bibliographic_data.md
     - Tools: 
-        - Home: tool/index.md
+        - Info: tool/index.md
         - X3ML: tool/mapping.md
  
 
 theme: 
   name: material
+  custom_dir: 'theme'
   logo: 'images/logo_image.svg'
-  theme:
   palette:
     primary: 'white'
   favicon: 'images/favicon.ico'
-  feature:
-    tabs: true
-
 extra_css:
   - 'stylesheets/extra.css'
 
