@@ -4,6 +4,8 @@ env:
 
 language: python # Set the build language to Python
 
+python: 3.6 # python version
+
 branches: master # Set the branch to build from
 
 install:
@@ -13,10 +15,10 @@ install:
 #    - pip install pygments
 
 script:
-- git clean -f -d -x
+  - git clean -f -d -x
 after_success:
-- git config user.name "Nicola Carboni"
-- git config user.email "nicola@carboni.me"
-- git remote add gh-token "https://${GH_TOKEN}@github.com/cordhum/docs.git";
-- git fetch gh-token && git fetch gh-token gh-pages:gh-pages;
-- mkdocs gh-deploy -v --clean --remote-name gh-token;
+  - git config user.name "Nicola Carboni"
+  - git config user.email "nicola@carboni.me"
+  - git remote add gh-token "https://${GH_TOKEN}@github.com/cordhum/docs.git";
+  - git fetch gh-token && git fetch gh-token gh-pages:gh-pages;
+  - mkdocs gh-deploy -v --clean --remote-name gh-token;
