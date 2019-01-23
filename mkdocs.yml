@@ -19,8 +19,8 @@ extra:
 nav:
     - About: index.md
     - Shared Patterns: modelling.md
-    - Time: time.md
-    - Images: images.md
+    - Time: Time.md
+    - Images: Images.md
     - Bibliographic Data: bibliographic_data.md
     - Tools: 
         - Info: tool/index.md
