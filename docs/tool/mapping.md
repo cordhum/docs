@@ -7,9 +7,9 @@ Each institutions will present and describe their mappings, together with their 
 
 ## I Tatti
 
-### Getty Project
+### FotoIndex Project
 
-X3ML Mapping definition and related Generator policy used in the [Getty Project](#) by [I Tatti](http://itatti.harvard.edu). The project involved the mapping of information related to Artists, Institutions, Artworks, Collections and photos.
+X3ML Mapping definition and related Generator policy used in the [FotoIndex Project](#) by [I Tatti](http://itatti.harvard.edu). The project involved the mapping of information related to Artists, Institutions, Artworks, Collections and photos.
 
 ??? note "Artist Mapping Definition"
 
@@ -2340,11 +2340,11 @@ X3ML Mapping definition and related Generator policy used in the [Getty Project]
     ```
 ??? note "General Generator Policy"
 
-	General Generator Policy comprising all the URI generators used across the Getty project.
+	General Generator Policy comprising all the URI generators used across the FotoIndex project.
 
     ``` xml
     <generator_policy>
-    <!-- General and interchangeble generator uri. Can be used across the whole Getty Mapping -->
+    <!-- General and interchangeble generator uri. Can be used across the whole FotoIndex Mapping -->
     <generator name="artistURI" prefix="vit">
         <pattern>person/{id}</pattern>
     </generator>
