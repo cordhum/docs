@@ -198,8 +198,8 @@ The date needs to be expressed with its datatype (date or dateTime). See the [W3
 ```turtle
 <https://collection.itatti.harvard.edu/resource/work/W00060289/production/timespan>
 a  crm:E52_Time-Span ;
-crm:P82a_begin_of_the_begin  "1401-01-01"^^xsd:date ;
-crm:P82b_end_of_the_end      "1700-12-31"^^xsd:date .
+crm:P82a_begin_of_the_begin  "1401-01-01T00:00:00"^^xsd:dateTime ;
+crm:P82b_end_of_the_end      "1700-12-31T23:59:59"^^xsd:dateTime .
 ```
 
 *<small>Codebox 5 - Time Statements</small>*
